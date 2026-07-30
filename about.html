@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOLigekeit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Bilder/JUlikagesicht.png">
+</head>
+<body>
+
+<nav class="navbar">
+<button class="burger-button" id="burgerButton" aria-label="Menue oeffnen" aria-expanded="false" aria-controls="navLinks">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<ul class="nav-links" id="navLinks">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Countdown.html">Countdown</a></li>
+  <li><a href="wochenupdates.html">Wochenupdates</a></li>
+  <li><a href="about.html">LOLigekeit</a></li>
+  <li class="youtube-nav-item">
+    <a class="button-wrapper" href="https://youtu.be/YNg1sS8falw?si=FSR0lMDIZHi3GpXZ" target="_blank" rel="noopener noreferrer">
+      <span class="spiderverse-button">
+        <span class="glitch-text">
+          Impressum
+          <span class="glitch-layers" aria-hidden="true">
+            <span class="glitch-layer layer-1">Impressum</span>
+            <span class="glitch-layer layer-2">Impressum</span>
+          </span>
+        </span>
+        <span class="noise" aria-hidden="true"></span>
+        <span class="glitch-slice" aria-hidden="true"></span>
+      </span>
+    </a>
+  </li>
+</ul>
+</nav>
+
+<h1>LOLigekeit</h1>
+
+<main class="loligkeit-page">
+  <button id="openMemoryButton" class="memory-open-button">Erinnerung des Tages öffnen</button>
+</main>
+
+<div id="memoryOverlay" class="memory-overlay" aria-hidden="true">
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+  <section class="memory-box">
+    <button id="closeMemoryButton" class="memory-close-button" aria-label="Erinnerung schliessen">x</button>
+    <p class="memory-label">Erinnerung des Tages</p>
+    <p id="memoryOfTheDay" class="memory-text">Erinnerung wird geladen...</p>
+    <p id="memoryDate" class="memory-date"></p>
+  </section>
+</div>
+
+<script src="erinnerungen.js"></script>
+<script src="loligkeit.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
